@@ -26,15 +26,15 @@
         <!--NavBar-->
 
         <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                    <a class="navbar-brand" href="#">
-                        
-                            <img src="logo.png" width="30" height="30" alt="">
-                    </a>
-                    
-                    <div class="container">
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            
+            <!--Navbar Scrolled Lock & when scrolled colored change it's happen when this code have only-->
+            <script>
+                $(document).scroll(function(){
+                        $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height())
+                });
+            </script>
+                    <div class="container"> 
                             <a class="navbar-brand mb-0 h1" href="#">SriLanka</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -68,7 +68,8 @@
                     </div>
         </nav>
         </header>   <!--End of the NavBAr-->
-
+        <br>
+        
 
         <div class="jumbotron jumbotron-fluid height100p banner" id="Home">
                 <div class="container h100">
@@ -131,7 +132,7 @@
         </section>
 
         <section class="sec2" id="PhotoTour">
-            <div class="jumbotron jumbotron-fluid height100p banner">
+            <div class="jumbotron jumbotron-fluid height100p banner1">
                 <div class="container ">
                         <div class="col-sm-12">
                         <div id="SlidePhotoTour" class="carousel slide" data-ride="carousel">
@@ -216,6 +217,7 @@
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li> <!--Fontawsome Icon-->
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li> <!--Fontawsome Icon-->
                         </ul>
+                        <p class="cpyrt">© Copyright 2019 Sri Lanka | Template by <a href="#"><i>Dinuwan Bhagya</i></a></p>
                     </div>
                 </div>
             </div>

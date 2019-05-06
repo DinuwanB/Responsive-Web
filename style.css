@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=space+mono:400,700" rel="stylesheet')
+*
+{
+    outline: none !important;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: relative;
+    z-index: 1000000;
+}
+p{
+    font-size: 1.15rem
+}
+.navbar.scrolled{
+    background: #000 !important;
+    transition: 0.5s;
+}
+.navbar{
+    background: transparent !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    background: #fff;
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    color: rgba(255,255,255,1); 
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited 
+{
+    color: rgba(255,255,255,1);
+    font-size: 2rem;
+    font-weight: 600;
+   
+}
+.banner
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(asphalt-back-road-blurred-background-1546901.jpg );
+    background-size: cover;
+}
